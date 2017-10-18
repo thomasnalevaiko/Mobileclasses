@@ -1,8 +1,12 @@
-﻿namespace MeuPrimeiroBackend.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MeuPrimeiroBackend.Models
 {
     public class item
     {
         public int ItemID { get; set; }
+                    
+        [Required, StringLength(20)]
 
         public string Nome { get; set; }
 
